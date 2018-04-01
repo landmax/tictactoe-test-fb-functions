@@ -42,7 +42,7 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	__webpack_require__(1);
 	__webpack_require__(2);
@@ -54,9 +54,9 @@
 	module.exports = __webpack_require__(11);
 
 
-/***/ },
+/***/ }),
 /* 1 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	var utils = {};
 
@@ -104,9 +104,9 @@
 
 	module.exports = utils;
 
-/***/ },
+/***/ }),
 /* 2 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	var subscribers = [];
 	var middlewares;
@@ -282,9 +282,9 @@
 	module.exports = Store;
 
 
-/***/ },
+/***/ }),
 /* 3 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	function Winner(grid, lastTurn) {
 		this.dimensions = [this.getRows(), this.getColumns(), this.getDiagonals()];
@@ -359,9 +359,9 @@
 	module.exports = new Winner();
 
 
-/***/ },
+/***/ }),
 /* 4 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	var utils = __webpack_require__(1);
 
@@ -394,9 +394,9 @@
 		return new ScoreView(players);
 	};
 
-/***/ },
+/***/ }),
 /* 5 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	var utils = __webpack_require__(1);
 
@@ -442,9 +442,9 @@
 	};
 
 
-/***/ },
+/***/ }),
 /* 6 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	function FaviconView(head) {
 		this.$head = head;
@@ -471,9 +471,9 @@
 	};
 
 
-/***/ },
+/***/ }),
 /* 7 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	// Application
 	// --------------
@@ -587,9 +587,9 @@
 	};
 
 
-/***/ },
+/***/ }),
 /* 8 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	exports.pickSide = function(turn) {
 		return {
@@ -620,9 +620,9 @@
 		};
 	};
 
-/***/ },
+/***/ }),
 /* 9 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	var utils = __webpack_require__(1);
 	var winnerService = __webpack_require__(3);
@@ -659,9 +659,9 @@
 		};
 	};
 
-/***/ },
+/***/ }),
 /* 10 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	var utils = __webpack_require__(1);
 
@@ -689,9 +689,9 @@
 		};
 	};
 
-/***/ },
+/***/ }),
 /* 11 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	document.addEventListener('DOMContentLoaded', function() {
 		var hash = window.location.hash;
@@ -750,5 +750,5 @@
 	}, false);
 
 
-/***/ }
+/***/ })
 /******/ ]);
